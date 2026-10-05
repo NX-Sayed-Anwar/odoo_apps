@@ -5,8 +5,7 @@
     'category': 'Productivity/Audit',
     'summary': 'Enterprise audit trail, deleted-record forensics, access monitoring, '
                'integrity sealing and retention for any Odoo model',
-    'author': 'Nextera MEA',
-    'website': 'https://nextera-mea.com',
+    'author': 'Sayed Anwar',
     'license': 'OPL-1',
     'price': 0.0,
     'currency': 'EUR',

@@ -1,0 +1,212 @@
+<section class="oe_container" style="font-family: Inter, 'Segoe UI', Roboto, sans-serif; color:#1f2a37;">
+  <div class="oe_row" style="max-width:1100px; margin:0 auto; padding:40px 16px 10px; text-align:center;">
+    <div style="display:inline-block; background:#12302e; color:#e3a21a; font-weight:700; font-size:13px; letter-spacing:.5px; padding:4px 14px; border-radius:20px;">ODOO 18 · COMPLIANCE</div>
+    <h1 style="font-size:40px; font-weight:800; color:#12302e; margin:16px 0 8px;">Audit Log &amp; Compliance</h1>
+    <p style="font-size:19px; color:#3c4a5a; max-width:820px; margin:0 auto 22px;">
+      Who changed what, when, from where - and the proof that nobody altered the record.
+      A tamper-evident audit trail for <b>any Odoo model, with no per-model code</b>.
+    </p>
+    <div style="margin-bottom:26px;">
+      <span style="display:inline-block; margin:4px; padding:6px 14px; border-radius:8px; background:#e2f6ec; color:#1f6f4a; font-weight:600;">Field-level evidence</span>
+      <span style="display:inline-block; margin:4px; padding:6px 14px; border-radius:8px; background:#fde8ea; color:#b23a48; font-weight:600;">Deleted-record forensics</span>
+      <span style="display:inline-block; margin:4px; padding:6px 14px; border-radius:8px; background:#fff4dc; color:#8a6100; font-weight:600;">Real-time alerts</span>
+      <span style="display:inline-block; margin:4px; padding:6px 14px; border-radius:8px; background:#f1e9fb; color:#7c4dbd; font-weight:600;">Hash-chain integrity</span>
+      <span style="display:inline-block; margin:4px; padding:6px 14px; border-radius:8px; background:#e3f1fb; color:#1c5d8a; font-weight:600;">Retention &amp; GDPR / PDPL</span>
+    </div>
+    <img src="img/01_dashboard.png" alt="Audit dashboard" style="max-width:100%; border-radius:10px; border:1px solid #dfe5ea; box-shadow:0 8px 28px rgba(0,0,0,.10);"/>
+  </div>
+</section>
+
+<section class="oe_container" style="font-family: Inter, 'Segoe UI', Roboto, sans-serif; color:#1f2a37; background:#e3a21a;">
+  <div class="oe_row" style="max-width:1100px; margin:0 auto; padding:40px 16px;">
+    <div style="font-weight:700; color:#12302e; font-size:14px;">THE PROBLEM</div>
+    <h2 style="font-size:30px; font-weight:800; color:#12302e; margin:6px 0 22px;">Odoo shows what your data is. It does not prove who changed it.</h2>
+    <div style="display:flex; flex-wrap:wrap; gap:16px;">
+      <div style="flex:1 1 300px; background:#fff6e0; border-radius:12px; padding:18px 20px;">
+        <h3 style="font-size:18px; color:#3d2a00; margin:0 0 6px;">Changes leave no trace</h3>
+        <p style="color:#4a3a10; margin:0;">Most fields are not tracked. An invoice total, a price or a supplier IBAN can change and the old value is lost.</p>
+      </div>
+      <div style="flex:1 1 300px; background:#fff6e0; border-radius:12px; padding:18px 20px;">
+        <h3 style="font-size:18px; color:#3d2a00; margin:0 0 6px;">Deletions erase everything</h3>
+        <p style="color:#4a3a10; margin:0;">A deleted record is gone. Nobody can say what it contained, or who removed it.</p>
+      </div>
+      <div style="flex:1 1 300px; background:#fff6e0; border-radius:12px; padding:18px 20px;">
+        <h3 style="font-size:18px; color:#3d2a00; margin:0 0 6px;">Nothing is provable</h3>
+        <p style="color:#4a3a10; margin:0;">Chatter can be deleted, server logs are technical, exports and API reads leave no trace.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="oe_container" style="font-family: Inter, 'Segoe UI', Roboto, sans-serif; color:#1f2a37; background:#12302e;">
+  <div class="oe_row" style="max-width:1100px; margin:0 auto; padding:40px 16px;">
+    <div style="font-weight:700; color:#e3a21a; font-size:14px;">THE SOLUTION</div>
+    <h2 style="font-size:30px; font-weight:800; color:#fff; margin:6px 0 22px;">Evidence, not messages: every change recorded, sealed and searchable</h2>
+    <div style="display:flex; flex-wrap:wrap; gap:16px;">
+      <div style="flex:1 1 300px; background:#1c4541; border-radius:12px; padding:18px 20px;">
+        <h3 style="font-size:18px; color:#e3a21a; margin:0 0 6px;">Captures automatically</h3>
+        <p style="color:#cfe0dc; margin:0;">Under the ORM and at the request boundary, in the same transaction as the business change. Rolled back = no evidence; committed = always evidence.</p>
+      </div>
+      <div style="flex:1 1 300px; background:#1c4541; border-radius:12px; padding:18px 20px;">
+        <h3 style="font-size:18px; color:#e3a21a; margin:0 0 6px;">Proves nothing was altered</h3>
+        <p style="color:#cfe0dc; margin:0;">Evidence is read-only for everybody and sealed into HMAC-SHA256 hash chains verified every day.</p>
+      </div>
+      <div style="flex:1 1 300px; background:#1c4541; border-radius:12px; padding:18px 20px;">
+        <h3 style="font-size:18px; color:#e3a21a; margin:0 0 6px;">Warns you in time</h3>
+        <p style="color:#cfe0dc; margin:0;">Alerts on deleted entries, changed totals or bank accounts, privilege changes, mass deletion and brute force.</p>
+      </div>
+    </div>
+    <img src="img/d01_pipeline.png" alt="Capture pipeline" style="max-width:100%; margin-top:26px; border-radius:10px;"/>
+  </div>
+</section>
+
+<section class="oe_container" style="font-family: Inter, 'Segoe UI', Roboto, sans-serif; color:#1f2a37;">
+  <div class="oe_row" style="max-width:1100px; margin:0 auto; padding:40px 16px 10px;">
+    <h2 style="font-size:30px; font-weight:800; color:#12302e; text-align:center; margin:0 0 30px;">Key features</h2>
+
+    <div style="display:flex; flex-wrap:wrap; gap:28px; align-items:center; margin-bottom:44px;">
+      <div style="flex:1 1 320px;">
+        <div style="font-weight:700; color:#0f8f84; font-size:13px;">FIELD-LEVEL EVIDENCE</div>
+        <h3 style="font-size:23px; margin:4px 0 10px;">Every field, old → new, with its origin</h3>
+        <ul style="padding-left:18px; color:#3c4a5a; line-height:1.6;">
+          <li>User, date, IP, user agent, session and <b>source decided by the server</b> (Web UI, JSON-RPC, XML-RPC, cron, import, automated / server action).</li>
+          <li>Before and after values read from the database: what was <b>really</b> stored.</li>
+          <li>Each line labelled <b>Direct</b>, <b>Derived</b> (recomputed) or <b>Database cascade</b>.</li>
+          <li>One2many lines and many2many links (both sides) included.</li>
+        </ul>
+      </div>
+      <div style="flex:1.4 1 420px;"><img src="img/03_invoice_update.png" alt="Event form" style="max-width:100%; border:1px solid #dfe5ea; border-radius:8px;"/></div>
+    </div>
+
+    <div style="display:flex; flex-wrap:wrap-reverse; gap:28px; align-items:center; margin-bottom:44px;">
+      <div style="flex:1.4 1 420px;"><img src="img/05_delete_snapshot.png" alt="Delete snapshot" style="max-width:100%; border:1px solid #dfe5ea; border-radius:8px;"/></div>
+      <div style="flex:1 1 320px;">
+        <div style="font-weight:700; color:#0f8f84; font-size:13px;">DELETED-RECORD FORENSICS</div>
+        <h3 style="font-size:23px; margin:4px 0 10px;">Deleted, but not forgotten</h3>
+        <ul style="padding-left:18px; color:#3c4a5a; line-height:1.6;">
+          <li>Full delete snapshot of every stored field.</li>
+          <li>Child events for lines deleted with the record and links cleared by PostgreSQL.</li>
+          <li>Refused deletions recorded as <b>failed operations</b>.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div style="display:flex; flex-wrap:wrap; gap:28px; align-items:center; margin-bottom:44px;">
+      <div style="flex:1 1 320px;">
+        <div style="font-weight:700; color:#0f8f84; font-size:13px;">RECORD TIMELINE</div>
+        <h3 style="font-size:23px; margin:4px 0 10px;">The whole story of a record on one screen</h3>
+        <ul style="padding-left:18px; color:#3c4a5a; line-height:1.6;">
+          <li><b>Action ⚙ → Audit Trail</b> on every audited model.</li>
+          <li>Changes of owned lines in the same timeline.</li>
+          <li>Old values struck through, derived changes on demand.</li>
+        </ul>
+      </div>
+      <div style="flex:1.4 1 420px;"><img src="img/07_timeline.png" alt="Record timeline" style="max-width:100%; border:1px solid #dfe5ea; border-radius:8px;"/></div>
+    </div>
+
+    <div style="display:flex; flex-wrap:wrap-reverse; gap:28px; align-items:center; margin-bottom:44px;">
+      <div style="flex:1.4 1 420px;"><img src="img/25_bulk_read_request.png" alt="Bulk API read" style="max-width:100%; border:1px solid #dfe5ea; border-radius:8px;"/></div>
+      <div style="flex:1 1 320px;">
+        <div style="font-weight:700; color:#0f8f84; font-size:13px;">DATA ACCESS &amp; SECURITY</div>
+        <h3 style="font-size:23px; margin:4px 0 10px;">Know who took the data</h3>
+        <ul style="padding-left:18px; color:#3c4a5a; line-height:1.6;">
+          <li>Exports, printed reports, imports (as batches with counters).</li>
+          <li>API reads above a threshold (500 records by default) with client and IP.</li>
+          <li>Login, logout, second factor, failed logins grouped by login + IP + window.</li>
+          <li>Users, groups, access rights, record rules, API keys and system parameters audited by default; secrets never stored.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div style="display:flex; flex-wrap:wrap; gap:28px; align-items:center; margin-bottom:44px;">
+      <div style="flex:1 1 320px;">
+        <div style="font-weight:700; color:#0f8f84; font-size:13px;">ALERTS</div>
+        <h3 style="font-size:23px; margin:4px 0 10px;">The right person is told within minutes</h3>
+        <ul style="padding-left:18px; color:#3c4a5a; line-height:1.6;">
+          <li>Ready-made: journal entry deleted or deletion blocked, invoice total changed &gt; 10 %, bank account number changed, user groups changed, mass deletion, brute force.</li>
+          <li>Triggers: delete, failed operation, field change (any / absolute / percent), mass delete, failed logins, business action.</li>
+          <li>Created with the evidence (never for a rolled-back change), deduplicated, capped per hour; chatter notification + To Do activity.</li>
+        </ul>
+      </div>
+      <div style="flex:1.4 1 420px;"><img src="img/14_alert_form.png" alt="Alert" style="max-width:100%; border:1px solid #dfe5ea; border-radius:8px;"/></div>
+    </div>
+
+    <div style="display:flex; flex-wrap:wrap-reverse; gap:28px; align-items:center; margin-bottom:44px;">
+      <div style="flex:1.4 1 420px;"><img src="img/d02_hash_chain.png" alt="Hash chain" style="max-width:100%; border:1px solid #dfe5ea; border-radius:8px;"/></div>
+      <div style="flex:1 1 320px;">
+        <div style="font-weight:700; color:#0f8f84; font-size:13px;">INTEGRITY</div>
+        <h3 style="font-size:23px; margin:4px 0 10px;">Tamper-evident by design</h3>
+        <ul style="padding-left:18px; color:#3c4a5a; line-height:1.6;">
+          <li>No create / write / delete rights on evidence, for anybody.</li>
+          <li>HMAC-SHA256 hash chain per company and year, key kept in <code>odoo.conf</code>.</li>
+          <li>Daily verification: missing event, broken link, modified event or value, invalid checkpoint, truncated tail.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div style="display:flex; flex-wrap:wrap; gap:28px; align-items:center; margin-bottom:44px;">
+      <div style="flex:1 1 320px;">
+        <div style="font-weight:700; color:#0f8f84; font-size:13px;">RETENTION &amp; PRIVACY</div>
+        <h3 style="font-size:23px; margin:4px 0 10px;">Keep what the law requires, erase what it allows</h3>
+        <ul style="padding-left:18px; color:#3c4a5a; line-height:1.6;">
+          <li>Policies: online → archived (searchable) → tombstone → signed checkpoint. Finance evidence can never be purged.</li>
+          <li>Sensitive patterns: secrets never stored, personal data flagged or stored as keyed digest.</li>
+          <li>Four-eyes redaction for data-subject requests: plain values removed, proof still valid.</li>
+        </ul>
+      </div>
+      <div style="flex:1.4 1 420px;"><img src="img/d03_retention.png" alt="Retention" style="max-width:100%; border:1px solid #dfe5ea; border-radius:8px;"/></div>
+    </div>
+
+    <div style="display:flex; flex-wrap:wrap-reverse; gap:28px; align-items:center; margin-bottom:30px;">
+      <div style="flex:1.4 1 420px;"><img src="img/09_rule_form.png" alt="Audit rule" style="max-width:100%; border:1px solid #dfe5ea; border-radius:8px;"/></div>
+      <div style="flex:1 1 320px;">
+        <div style="font-weight:700; color:#0f8f84; font-size:13px;">CONTROL</div>
+        <h3 style="font-size:23px; margin:4px 0 10px;">You decide what is recorded</h3>
+        <ul style="padding-left:18px; color:#3c4a5a; line-height:1.6;">
+          <li>Rule per model or for all business models, by company, domain, user, group or source.</li>
+          <li>All / selected / all-except fields, secret fields, direct or derived changes.</li>
+          <li>Default rules for finance, sales, purchase, inventory, contacts and security, created for the installed apps.</li>
+          <li>Fail mode: keep business running, or block the transaction if evidence cannot be written.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="oe_container" style="font-family: Inter, 'Segoe UI', Roboto, sans-serif; color:#1f2a37; background:#f5f6f1;">
+  <div class="oe_row" style="max-width:1100px; margin:0 auto; padding:40px 16px;">
+    <h2 style="font-size:28px; font-weight:800; color:#12302e; margin:0 0 18px;">The same questions, now answered in seconds</h2>
+    <table style="width:100%; border-collapse:collapse; font-size:15px; background:#fff;">
+      <tr style="background:#0f8f84; color:#fff;"><th style="padding:10px; text-align:left;">Question</th><th style="padding:10px; text-align:left;">Standard Odoo</th><th style="padding:10px; text-align:left;">With nx_audit_log</th></tr>
+      <tr><td style="padding:9px; border-bottom:1px solid #e3e8ee;">Who raised this invoice total by 25 %?</td><td style="padding:9px; border-bottom:1px solid #e3e8ee; color:#b23a48;">Unknown</td><td style="padding:9px; border-bottom:1px solid #e3e8ee; color:#1f6f4a; font-weight:600;">User, IP, time, old → new + alert</td></tr>
+      <tr><td style="padding:9px; border-bottom:1px solid #e3e8ee;">What did the deleted customer contain?</td><td style="padding:9px; border-bottom:1px solid #e3e8ee; color:#b23a48;">Gone</td><td style="padding:9px; border-bottom:1px solid #e3e8ee; color:#1f6f4a; font-weight:600;">Full delete snapshot + cascade effects</td></tr>
+      <tr><td style="padding:9px; border-bottom:1px solid #e3e8ee;">Who changed the supplier's bank account?</td><td style="padding:9px; border-bottom:1px solid #e3e8ee; color:#b23a48;">Unknown</td><td style="padding:9px; border-bottom:1px solid #e3e8ee; color:#1f6f4a; font-weight:600;">Critical alert within 5 minutes</td></tr>
+      <tr><td style="padding:9px; border-bottom:1px solid #e3e8ee;">Who read our customer list through the API?</td><td style="padding:9px; border-bottom:1px solid #e3e8ee; color:#b23a48;">Invisible</td><td style="padding:9px; border-bottom:1px solid #e3e8ee; color:#1f6f4a; font-weight:600;">Bulk read event with client and IP</td></tr>
+      <tr><td style="padding:9px; border-bottom:1px solid #e3e8ee;">Can we prove the log was not edited?</td><td style="padding:9px; border-bottom:1px solid #e3e8ee; color:#b23a48;">No</td><td style="padding:9px; border-bottom:1px solid #e3e8ee; color:#1f6f4a; font-weight:600;">Daily hash-chain verification</td></tr>
+      <tr><td style="padding:9px;">Can we erase a person's data on request?</td><td style="padding:9px; color:#b23a48;">Not safely</td><td style="padding:9px; color:#1f6f4a; font-weight:600;">Four-eyes redaction, proof still valid</td></tr>
+    </table>
+  </div>
+</section>
+
+<section class="oe_container" style="font-family: Inter, 'Segoe UI', Roboto, sans-serif; color:#1f2a37;">
+  <div class="oe_row" style="max-width:1100px; margin:0 auto; padding:40px 16px;">
+    <h2 style="font-size:28px; font-weight:800; color:#12302e; margin:0 0 18px;">Get started in four steps</h2>
+    <div style="display:flex; flex-wrap:wrap; gap:16px;">
+      <div style="flex:1 1 230px; border:1px solid #dfe5ea; border-top:5px solid #0f8f84; border-radius:10px; padding:16px;">
+        <b style="color:#0f8f84;">1 · Install</b><p style="margin:6px 0 0; color:#3c4a5a;">Default audit and alert rules are created for your installed apps.</p></div>
+      <div style="flex:1 1 230px; border:1px solid #dfe5ea; border-top:5px solid #0f8f84; border-radius:10px; padding:16px;">
+        <b style="color:#0f8f84;">2 · Set the key</b><p style="margin:6px 0 0; color:#3c4a5a;">Add <code>nx_audit_hmac_key</code> to <code>odoo.conf</code> and keep it with your backups.</p></div>
+      <div style="flex:1 1 230px; border:1px solid #dfe5ea; border-top:5px solid #0f8f84; border-radius:10px; padding:16px;">
+        <b style="color:#0f8f84;">3 · Assign roles</b><p style="margin:6px 0 0; color:#3c4a5a;">Audit User, Manager, Administrator; choose alert recipients.</p></div>
+      <div style="flex:1 1 230px; border:1px solid #dfe5ea; border-top:5px solid #0f8f84; border-radius:10px; padding:16px;">
+        <b style="color:#0f8f84;">4 · Tune</b><p style="margin:6px 0 0; color:#3c4a5a;">Review the rules, activate the broad rule if needed, load defaults after new apps.</p></div>
+    </div>
+    <div style="margin-top:28px; padding:18px 22px; background:#e3f1fb; border-left:5px solid #1c7ed6; border-radius:8px;">
+      <b>Documentation included:</b> complete user guide with a hands-on example, in
+      <a href="nx_audit_log_user_guide_en.pdf" target="_blank">English</a> and
+      <a href="nx_audit_log_user_guide_ar_msa.pdf" target="_blank">Arabic</a>.
+      Optional demo module <code>nx_audit_log_demo</code> fills a test database with realistic evidence.
+    </div>
+    <p style="text-align:center; color:#5b6b7c; margin-top:30px;">Odoo 18 · Community &amp; Enterprise · Depends on base, web, mail, base_import · Sayed Anwar</p>
+  </div>
+</section>
